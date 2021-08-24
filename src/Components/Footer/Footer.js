@@ -1,8 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import github from "../../images/icons/github.svg";
-import linkedin from "../../images/icons/linkedin.svg";
-import twitter from "../../images/icons/twitter.svg";
+import SocialMedia from "../SocialMedia";
 
 function Footer() {
   return (
@@ -33,36 +31,7 @@ function Footer() {
           </section>
         </div>
         <div className="footer-right">
-          <section className="footer-social">
-            <NavLink
-              to={{ pathname: "https://github.com/aycom366" }}
-              target="_blank"
-              className="social-links"
-            >
-              <img aria-label="github" src={github} alt="Temitayo Github" />
-            </NavLink>
-            <NavLink
-              to={{ pathname: "https://twitter.com/bamigboyeayomi5" }}
-              target="_blank"
-              className="social-links"
-            >
-              <img aria-label="Twitter" src={twitter} alt="Temitayo Twitter" />
-            </NavLink>
-            <NavLink
-              to={{
-                pathname:
-                  "https://https://www.linkedin.com/in/ayomide-bamigboye-a477b4171/",
-              }}
-              target="_blank"
-              className="social-links"
-            >
-              <img
-                aria-label="Linkedin"
-                src={linkedin}
-                alt="Temitayo Linkedin"
-              />
-            </NavLink>
-          </section>
+          <SocialMedia />
         </div>
       </div>
     </main>

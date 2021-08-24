@@ -1,0 +1,85 @@
+.contact {
+  margin-top: 150px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-in-touch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 48px 0;
+}
+
+.first {
+  border-top: 2px solid var(--light-grey);
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.get-in-touch p {
+  margin-bottom: 24px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+.form-control label {
+  margin-bottom: 8px;
+}
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  background-color: var(--light-grey);
+  border: none;
+  outline: none;
+  padding: 9px 18px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  margin-bottom: 24px;
+}
+textarea {
+  padding-bottom: 57px !important;
+}
+
+.form-control label {
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.dark {
+  background-color: #203a4c;
+  padding: 17px 0 !important;
+  font-family: "Public Sans", sans-serif;
+  width: 200px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin-bottom: 62px;
+  transition: var(--transition);
+}
+
+.dark:hover {
+  background-color: var(--darker-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .get-in-touch {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,12 +1,12 @@
 @import "./Components/Footer/Footer.css";
 @import "./Components/NavBar/NavBar.css";
 @import "./Pages/Home/Home.css";
+@import "./Pages/Contact/Contact.css";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ibarra Real Nova", serif;
 }
 
 body {
@@ -38,6 +38,7 @@ h1 {
   line-height: 50px;
   letter-spacing: -0.45px;
   color: var(--darker-blue);
+  font-family: "Ibarra Real Nova", serif;
 }
 
 img {
@@ -54,6 +55,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 42px;
+  font-family: "Ibarra Real Nova", serif;
   letter-spacing: -0.36px;
   color: var(--darker-blue);
 }
@@ -70,6 +72,8 @@ h3 {
   font-style: italic;
   font-weight: 700;
   line-height: 12px;
+  font-family: "Ibarra Real Nova", serif;
+
   letter-spacing: 0px;
 }
 
@@ -83,6 +87,7 @@ h3 {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
 }
 
 .links:hover {
@@ -102,6 +107,7 @@ h3 {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 2px;
+  font-family: "Public Sans", sans-serif;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -116,6 +122,7 @@ p {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0px;
+  font-family: "Public Sans", sans-serif;
   opacity: 0.8;
 }
 

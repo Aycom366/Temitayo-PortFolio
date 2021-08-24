@@ -1,13 +1,164 @@
-body {
+@import "./Components/Footer/Footer.css";
+@import "./Components/NavBar/NavBar.css";
+@import "./Pages/Home/Home.css";
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ibarra Real Nova", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--very-light-grey);
+}
+
+:root {
+  --green: #5fb4a2;
+  --dark-blue: #203a4c;
+  --darker-blue: #33323d;
+  --very-light-grey: #fafafa;
+  --light-grey: #eaeaeb;
+  --red: #f43030;
+  --transition: all 0.5s ease-in-out;
+  --width: 95vw;
+  --width-mobile: 90vw;
+  --margin-bottom: 150px;
+  --margin-mobile: 80px;
+}
+
+.container {
+  max-width: 1300px;
+  width: var(--width);
+  margin: 0 auto;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+  color: var(--darker-blue);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: var(--darker-blue);
+}
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+  color: var(--darker-blue);
+}
+
+.error {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0px;
+}
+
+.links {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: var(--darker-blue);
+  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.links:hover {
+  transform: translateY(-2px);
+}
+
+.links--active {
+  color: var(--green);
+}
+
+.btn-light {
+  padding: 17px 0;
+  border: 1px solid var(--darker-blue);
+  text-transform: uppercase;
+  background-color: var(--very-light-grey);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-light:hover {
+  background: var(--darker-blue);
+  color: var(--very-light-grey);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  display: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  margin: 0 auto;
+}
+
+.overlay-active {
+  display: block;
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    color: var(--darker-blue);
+  }
+}
+@media screen and (max-width: 600px) {
+  .links {
+    color: var(--very-light-grey);
+  }
+  .links--active {
+    color: var(--green);
+  }
+  .container {
+    width: var(--width-mobile);
+  }
 }

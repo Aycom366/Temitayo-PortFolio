@@ -95,6 +95,7 @@
 
 .btn-portfolio {
   max-width: 250px;
+  margin-bottom: 32px;
 }
 
 .interested {
@@ -119,7 +120,7 @@
   margin-right: 2rem;
 }
 
-.interested-container button {
+.interested-container a {
   width: 300px !important;
 }
 
@@ -195,4 +196,8 @@
   .interested-container h2 {
     margin-bottom: 40px;
   }
+}
+
+.portfolio-container {
+  height: calc(100vh - 80px);
 }

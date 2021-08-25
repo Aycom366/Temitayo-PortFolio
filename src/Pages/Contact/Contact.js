@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SocialMedia from "../../Components/SocialMedia";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function Contact() {
+  //useForm Properties
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    trigger,
+    reset,
+    setFocus,
+  } = useForm();
+
+  useEffect(() => {
+    setFocus("name");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const onSubmit = (data) => {
+    axios.post(baseURL, {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    });
+    alert("Thanks for your message");
+    reset();
+  };
+
+  const baseURL = "https://formspree.io/f/mdoyprwn";
+
   return (
     <main className="contact">
       <div className="contact-container container">
@@ -24,23 +53,53 @@ function Contact() {
         </div>
         <div className="contact-me-page get-in-touch">
           <h2>Contact Me</h2>
-          <form autoComplete="off">
-            <div className="name form-control">
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className={` form-control ${errors.name && "errorClass"}  `}>
               <label htmlFor="name">Name</label>
-              <input type="text" placeholder="Temi Bami" />
-              <span></span>
+              <input
+                id="name"
+                type="text"
+                placeholder="Temi Bami"
+                {...register("name", {
+                  required: "This field is required",
+                })}
+                onKeyUp={() => trigger("name")}
+              />
+              {errors.name && <span>{errors.name.message}</span>}
             </div>
-            <div className="email form-control">
+            <div className={` form-control ${errors.email && "errorClass"}  `}>
               <label htmlFor="email">Email</label>
-              <input type="email" placeholder="TemiBami@gmail.com" />
-              <span></span>
+              <input
+                type="email"
+                id="email"
+                placeholder="TemiBami@gmail.com"
+                {...register("email", {
+                  required: "This field is required",
+                  pattern: {
+                    value:
+                      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    message: "wrong format",
+                  },
+                })}
+                onKeyUp={() => trigger("email")}
+              />
+              {errors.email && <span>{errors.email.message}</span>}
             </div>
-            <div className="message form-control">
+            <div className={` form-control ${errors.message && "errorClass"} `}>
               <label htmlFor="message">Message</label>
-              <textarea placeholder="How can i help?" />
-              <span></span>
+              <textarea
+                id="message"
+                placeholder="How can i help?"
+                {...register("message", {
+                  required: "This field is required",
+                })}
+                onKeyUp={() => trigger("message")}
+              />
+              {errors.message && <span>{errors.message.message}</span>}
             </div>
-            <button className="dark">send message</button>
+            <button type="submit" className="dark">
+              send message
+            </button>
           </form>
         </div>
       </div>

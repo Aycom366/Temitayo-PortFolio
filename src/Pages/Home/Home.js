@@ -2,6 +2,7 @@ import React from "react";
 import downArrow from "../../images/icons/down-arrows.svg";
 import Temi from "../../images/homepage/desktop/Temi.jpg";
 import mobileBackground from "../../images/homepage/mobile/image-homepage-hero@2x.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -42,14 +43,7 @@ function Home() {
           <div className="my-image">
             <img
               data-aos="fade-right"
-              src={
-                Temi
-                // getWidth < 600
-                //   ? personMobile
-                //   : getWidth > 600 && getWidth <= 768
-                //   ? personTablet
-                //   : personDesktop
-              }
+              src={Temi}
               alt="Ayomide Temitayo Bamigboye"
             />
           </div>
@@ -65,13 +59,14 @@ function Home() {
               When I’m not coding, you’ll find me outdoors. I love music
               especially playing piano. I'd love you to check my work.
             </p>
-            <button
+            <Link
               data-aos="fade-left"
               data-aos-delay="600"
               className="btn-light btn-portfolio"
+              to="/portfolio"
             >
               go to portfolio
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -79,13 +74,14 @@ function Home() {
         <div className="interested-container container">
           <h2 data-aos="fade-right">Interested in doing a project together?</h2>
           <div data-aos="fade-down" data-aos-delay="200"></div>
-          <button
+          <Link
             data-aos="fade-left"
             data-aos-delay="400"
             className="btn-light"
+            to="/contact"
           >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
     </main>

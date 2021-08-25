@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -99,7 +100,10 @@ h3 {
 }
 
 .btn-light {
-  padding: 17px 0;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--darker-blue);
   text-transform: uppercase;
   background-color: var(--very-light-grey);
@@ -110,6 +114,8 @@ h3 {
   font-family: "Public Sans", sans-serif;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  color: var(--darker-blue);
 }
 
 .btn-light:hover {

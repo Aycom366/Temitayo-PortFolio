@@ -12,9 +12,11 @@ function Home() {
           <div data-aos="fade-right" className="mobileback">
             <img src={mobileBackground} alt="Temitayo" />
           </div>
-          <div className="info">
-            <h1 data-aos="fade-left">
-              Hey, I'm Ayomide Temitayo and I love building beautiful websites
+          <div data-aos="fade-right" className="info">
+            <h1 data-aos="fade-left" data-aos-delay="100">
+              Hey, I'm TemiTayo
+              <br />
+              Freelance Web designs And C# developer.
             </h1>
             <button className="btn-about">
               <div className="about-img">

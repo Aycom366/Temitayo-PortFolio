@@ -2,6 +2,7 @@
 @import "./Components/NavBar/NavBar.css";
 @import "./Pages/Home/Home.css";
 @import "./Pages/Contact/Contact.css";
+@import "./Pages/PortFolio/PortFolio.css";
 
 * {
   margin: 0;

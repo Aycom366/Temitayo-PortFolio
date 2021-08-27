@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import data from "./data";
 
 //the context to use with the whle app
 const AppContext = React.createContext();
@@ -13,7 +14,11 @@ export const AppProvider = ({ children }) => {
 
   const [getWidth, setGetWidth] = useState(getWindowWidth);
 
+  const [portFolios, setPortFolios] = useState([]);
+
   useEffect(() => {
+    setPortFolios(data);
+
     function handleResize() {
       setGetWidth(getWindowWidth());
     }
@@ -23,7 +28,9 @@ export const AppProvider = ({ children }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={{ isNavOpen, setIsNavOpen, getWidth }}>
+    <AppContext.Provider
+      value={{ isNavOpen, setIsNavOpen, portFolios, getWidth, data }}
+    >
       {children}
     </AppContext.Provider>
   );

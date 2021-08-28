@@ -100,6 +100,79 @@
   margin-bottom: 32px;
 }
 
+.skills-section {
+  margin-bottom: var(--margin-bottom);
+  background-color: var(--darker-blue);
+  color: var(--very-light-grey) !important;
+  padding-top: 50px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem 1.5rem;
+  padding: 50px 0;
+  padding-bottom: 100px;
+}
+
+.skills {
+  color: var(--darker-blue);
+  background-color: #dae2ec;
+  text-align: right;
+  padding: 10px 1rem 10px 0;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.html {
+  width: 90%;
+}
+
+.javascript {
+  width: 70%;
+}
+
+.react {
+  width: 80%;
+}
+.C {
+  width: 60%;
+}
+.vb {
+  width: 70%;
+}
+
+.skillsInfo .flex {
+  margin-bottom: 1rem;
+}
+
+.skillsInfo .underline {
+  margin-top: 0.5rem;
+}
+.skillsInfo .flex h1 {
+  color: var(--very-light-grey) !important;
+}
+
+.skillsInfo .flex .underline {
+  background-color: var(--light-grey);
+}
+
+.container-skills {
+  width: 100%;
+  background: var(--very-light-grey);
+  border-radius: 10px;
+}
+
+.skillsCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsCon p {
+  margin-bottom: 0.2rem;
+}
+
 .interested {
   margin-bottom: var(--margin-bottom);
 }
@@ -197,5 +270,10 @@
   }
   .interested-container h2 {
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .skills-container {
+    grid-template-columns: 1fr;
   }
 }

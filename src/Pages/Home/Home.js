@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import downArrow from "../../images/icons/down-arrows.svg";
 import Temi from "../../images/homepage/desktop/Temi.jpg";
 import mobileBackground from "../../images/homepage/mobile/image-homepage-hero@2x.jpg";
@@ -78,6 +78,58 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* skillds */}
+      <section className="skills-section">
+        <section className="container skillsInfo">
+          <section className="flex">
+            <h1>Skills</h1>
+            <div className="underline"></div>
+          </section>
+          <div className=" skills-container">
+            <div data-aos="fade-right" className="skillsCon">
+              <p>HTML/CSS</p>
+              <div className="container-skills">
+                <div className="skills html">90%</div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-delay="200"
+              className="skillsCon"
+            >
+              <p>Javscript</p>
+              <div className="container-skills">
+                <div className="skills javascript">70%</div>
+              </div>
+            </div>
+            <div data-aos="fade-right" className="skillsCon">
+              <p>React</p>
+              <div className="container-skills">
+                <div className="skills react">80%</div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-delay="200"
+              className="skillsCon"
+            >
+              <p>C#</p>
+              <div className="container-skills">
+                <div className="skills C">60%</div>
+              </div>
+            </div>
+            <div data-aos="fade-right" className="skillsCon">
+              <p>Visual Basic</p>
+              <div className="container-skills">
+                <div className="skills vb">70%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      {/* intersted to contact */}
       <div className="interested">
         <div className="interested-container container">
           <h2 data-aos="fade-right">Interested in doing a project together?</h2>

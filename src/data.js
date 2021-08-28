@@ -235,7 +235,7 @@ const projects = [
     id: 11,
     category: "VB",
     title: "Car Wash System",
-    lang: ["VB,'Report Viewer"],
+    lang: ["VB", " Report Viewer"],
     url: "https://github.com/Aycom366/car-wash",
     slug: "carwash",
     info: "A Car wash management system developed to automate individuals or companies that wants to automate their Car Wash Companies.\nThis software keeps tracks of car being brought in for washing and also calculates report either daily or weekly or monthly.",

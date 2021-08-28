@@ -6,10 +6,10 @@ import closeNav from "../../images/icons/close.svg";
 import { useGlobalContext } from "../../context";
 
 function NavBar() {
-  const { isNavOpen, setIsNavOpen } = useGlobalContext();
+  const { isNavOpen, setIsNavOpen, isMoved } = useGlobalContext();
   return (
     <header>
-      <nav className="container">
+      <nav className={`nav ${isMoved && "small"} container`}>
         <section className="nav-logo-mobile">
           <div className="logoContainer">
             <Link

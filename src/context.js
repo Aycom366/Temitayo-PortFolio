@@ -14,6 +14,23 @@ export const AppProvider = ({ children }) => {
 
   const [getWidth, setGetWidth] = useState(getWindowWidth);
 
+  const [isMoved, setIsMoved] = useState(false);
+
+  useEffect(() => {
+    const doc = document.addEventListener("scroll", (e) => {
+      let scrolled = document.scrollingElement.scrollTop;
+      console.log(getWidth);
+      if (scrolled >= 150 && getWidth > 600) {
+        setIsMoved(true);
+      } else {
+        setIsMoved(false);
+      }
+    });
+    return () => {
+      document.removeEventListener("scroll", doc);
+    };
+  }, []);
+
   //category to be shown in drop down
   const dropDownCategories = [
     "All",
@@ -37,6 +54,7 @@ export const AppProvider = ({ children }) => {
         data,
         getWidth,
         data,
+        isMoved,
         dropDownCategories,
       }}
     >

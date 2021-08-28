@@ -16,7 +16,7 @@ function Home() {
             <h1 data-aos="fade-left" data-aos-delay="100">
               Hey, I'm TemiTayo
               <br />
-              Freelance Web designs And C# developer.
+              Freelance Web designer And C# developer.
             </h1>
             <button className="btn-about">
               <div className="about-img">
@@ -32,15 +32,21 @@ function Home() {
                   alt="Arrow Down"
                 />
               </div>
-              <p data-aos="fade-left" data-aos-delay="400" className="btn-me">
-                ABOUT ME
-              </p>
+              <Link
+                style={{ textDecoration: "none" }}
+                data-aos="fade-left"
+                data-aos-delay="400"
+                className="btn-me"
+                to="/contact"
+              >
+                CONTACT ME
+              </Link>
             </button>
           </div>
         </div>
       </section>
 
-      <section className="about">
+      <section id="about" className="about">
         <div className="about-me container">
           <div className="my-image">
             <img

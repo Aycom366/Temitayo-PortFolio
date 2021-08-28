@@ -35,13 +35,13 @@ function Contact() {
     <main className="contact">
       <div className="contact-container container">
         <div className="get-in-touch first">
-          <h2>Get in Touch</h2>
+          <h2 data-aos="fade-right">Get in Touch</h2>
           <div className="get-info">
-            <p>
+            <p data-aos="fade-left" data-aos-delay="200">
               I’d love to hear about what you’re working on and how I could
               help. I’m currently looking for a new role and am open to a wide
               range of opportunities. My preference would be to find a position
-              in a company in London. But I’m also happy to hear about
+              in a company in Nigeria. But I’m also happy to hear about
               opportunites that don’t fit that description. I’m a hard-working
               and positive person who will always approach each task with a
               sense of purpose and attention to detail. Please do feel free to
@@ -52,8 +52,12 @@ function Contact() {
           </div>
         </div>
         <div className="contact-me-page get-in-touch">
-          <h2>Contact Me</h2>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <h2 data-aos="fade-down">Contact Me</h2>
+          <form
+            data-aos="fade-right"
+            data-aos-delay="200"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <div className={` form-control ${errors.name && "errorClass"}  `}>
               <label htmlFor="name">Name</label>
               <input

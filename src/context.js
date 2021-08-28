@@ -5,7 +5,7 @@ import data from "./data";
 const AppContext = React.createContext();
 
 const getWindowWidth = () => {
-  const { width } = window;
+  const { innerWidth: width } = window;
   return width;
 };
 
@@ -14,11 +14,13 @@ export const AppProvider = ({ children }) => {
 
   const [getWidth, setGetWidth] = useState(getWindowWidth);
 
-  const [portFolios, setPortFolios] = useState([]);
+  //category to be shown in drop down
+  const dropDownCategories = [
+    "All",
+    ...new Set(data.map((category) => category.category)),
+  ];
 
   useEffect(() => {
-    setPortFolios(data);
-
     function handleResize() {
       setGetWidth(getWindowWidth());
     }
@@ -29,7 +31,14 @@ export const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ isNavOpen, setIsNavOpen, portFolios, getWidth, data }}
+      value={{
+        isNavOpen,
+        setIsNavOpen,
+        data,
+        getWidth,
+        data,
+        dropDownCategories,
+      }}
     >
       {children}
     </AppContext.Provider>

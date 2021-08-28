@@ -14,6 +14,8 @@ function SocialMedia({ className }) {
         to={{ pathname: "https://github.com/aycom366" }}
         target="_blank"
         className={`social-links ${className}`}
+        data-aos={`${className && "fade-left"}`}
+        data-aos-delay={`${className && "300"}`}
       >
         <img
           aria-label="github"
@@ -22,6 +24,8 @@ function SocialMedia({ className }) {
         />
       </NavLink>
       <NavLink
+        data-aos={`${className && "fade-left"}`}
+        data-aos-delay={`${className && "400"}`}
         to={{ pathname: "https://twitter.com/bamigboyeayomi5" }}
         target="_blank"
         className={`social-links ${className}`}
@@ -33,6 +37,8 @@ function SocialMedia({ className }) {
         />
       </NavLink>
       <NavLink
+        data-aos={`${className && "fade-left"}`}
+        data-aos-delay={`${className && "500"}`}
         to={{
           pathname:
             "https://https://www.linkedin.com/in/ayomide-bamigboye-a477b4171/",

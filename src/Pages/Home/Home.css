@@ -51,10 +51,12 @@
   background-color: var(--dark-blue);
   border: none;
   outline: none;
+  transition: var(--transition);
 }
 
 .btn-about:hover {
-  background-color: var(--green);
+  background-color: var(--darker-blue);
+  transition: var(--transition);
 }
 
 .btn-me {
@@ -196,8 +198,4 @@
   .interested-container h2 {
     margin-bottom: 40px;
   }
-}
-
-.portfolio-container {
-  height: calc(100vh - 80px);
 }

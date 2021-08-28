@@ -1,87 +1,246 @@
+//next
+import nextDesktop from "./images/portfolio/desktop/next.png";
+import nextTablet from "./images/portfolio/tablet/next.png";
+import nextMobile from "./images/portfolio/mobile/next.png";
+
+//colors
+import colorDesktop from "./images/portfolio/desktop/color.png";
+import colorTablet from "./images/portfolio/tablet/color.png";
+import colorMobile from "./images/portfolio/mobile/color.png";
+
+//AudioPhile
+import FinishedAudioPhileDesktop from "./images/portfolio/desktop/Finished-AudioPhile.png";
+import FinishedAudioPhileTablet from "./images/portfolio/tablet/Finished-AudioPhile.png";
+import FinishedAudioPhileMobile from "./images/portfolio/mobile/Finished-AudioPhile.png";
+
+//Budget
+import FinishedbudgetDesktop from "./images/portfolio/desktop/Finished-budget.png";
+import FinishedbudgetTablet from "./images/portfolio/tablet/Finished-budget.png";
+import FinishedbudgetMobile from "./images/portfolio/mobile/Finished-budget.png";
+
+//loop
+import FinishedLoopDesktop from "./images/portfolio/desktop/Finished-Loop.png";
+import FinishedLoopTablet from "./images/portfolio/tablet/Finished-Loop.png";
+import FinishedLoopMobile from "./images/portfolio/mobile/Finished-Loop.png";
+
+//Crowded
+import FinishedCrowdedDesktop from "./images/portfolio/desktop/Finshed-Crowded.png";
+import FinishedCrowdedTablet from "./images/portfolio/tablet/Finshed-Crowded.png";
+import FinishedCrowdedMobile from "./images/portfolio/mobile/Finshed-Crowded.png";
+
+//Designo
+import FinishedDesignoDesktop from "./images/portfolio/desktop/Finshed-Designo.png";
+import FinishedDesignoTablet from "./images/portfolio/tablet/Finshed-Designo.png";
+import FinishedDesignoMobile from "./images/portfolio/mobile/Finshed-Designo.png";
+
+//Room
+import FinishedRoomDesktop from "./images/portfolio/desktop/Finshed-Room.png";
+import FinishedRoomTablet from "./images/portfolio/tablet/Finshed-Room.png";
+import FinishedRoomMobile from "./images/portfolio/mobile/Finshed-Room.png";
+
+//TODO
+import FinishedTODODesktop from "./images/portfolio/desktop/Finshed-TODO.png";
+import FinishedTODOTablet from "./images/portfolio/tablet/Finshed-TODO.png";
+import FinishedTODOMobile from "./images/portfolio/mobile/Finshed-TODO.png";
+
+//Battery
+import BatteryChecker from "./images/portfolio/mobile/Battery.png";
+
+//studentId
+import StudentId from "./images/portfolio/mobile/StudentId.png";
+
+//carwash
+import carwash from "./images/portfolio/mobile/Gee-Man-CarWash.png";
+
+//file
+import file from "./images/portfolio/mobile/File.png";
+
+//workspace
+import workspace from "./images/portfolio/mobile/workspace.png";
+
 const projects = [
   {
     id: 1,
     category: "HTML",
-    categoryName: "HTML & CSS",
     title: "The Next Website",
     lang: ["HTML", "CSS", "JS"],
     url: "https://github.com/Aycom366/The-Next-Website",
     live: "https://the-next-website.vercel.app/",
     slug: "next-website",
     info: "This Project was made back then when I Started my Web Design. It was made to actually text my css layout grids. and of cause, it responsive across all web surfer devices.\nThis was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.\nThis Project was done to perfect setting down of reponsiveness in a website.",
-    cat: "next",
     images: {
-      mobil: "/images/portfolio/desktop/finshed-next.png",
-      tablet: "/images/portfolio/tablet/finshed-next.png",
-      desktop: "/images/portfolio/desktop/finshed-next.png",
+      mobil: nextMobile,
+      tablet: nextTablet,
+      desktop: nextDesktop,
     },
   },
   {
     id: 2,
     category: "HTML",
-    categoryName: "HTML & CSS",
     title: "The Color Website",
     lang: ["HTML", "CSS", "JS"],
-    url: "https://https://github.com/Aycom366/Color-Website",
-    live: "https://http://color-website.vercel.app/",
+    url: "https://github.com/Aycom366/Color-Website",
+    live: "https://color-website.vercel.app/",
     slug: "color-website",
     info: "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.\nThis Project was done to perfect setting down of reponsiveness in a website.",
-    cat: "next",
     images: {
-      mobil: "/images/portfolio/desktop/color.png",
-      tablet: "/images/portfolio/tablet/color.png",
-      desktop: "/images/portfolio/desktop/color.png",
+      mobil: colorMobile,
+      tablet: colorTablet,
+      desktop: colorDesktop,
     },
   },
   {
     id: 3,
     category: "React",
-    categoryName: "React",
     title: "Tip Calculator",
-    lang: ["HTML", "CSS", "React"],
-    url: "https://https://https://github.com/Aycom366/React-Tip-Calculator",
-    live: "https://http://react-tip-calculator.vercel.app/",
+    lang: ["HTML", "CSS", "REACT"],
+    url: "https://github.com/Aycom366/React-Tip-Calculator",
+    live: "https://react-tip-calculator.vercel.app/",
     slug: "tip-website",
     info: "A simple Tip Calculator that calculates tip amount for various percentages of the cost of the service, and also provides a total amount that includes the tip.\nThis Project was done to perfect setting down of reponsiveness in a website.",
-    cat: "next",
     images: {
-      mobil: "/images/portfolio/desktop/Finshed-budget.png",
-      tablet: "/images/portfolio/tablet/Finshed-budget.png",
-      desktop: "/images/portfolio/desktop/Finshed-budget.png",
+      mobil: FinishedbudgetMobile,
+      tablet: FinishedbudgetTablet,
+      desktop: FinishedbudgetDesktop,
     },
   },
   {
     id: 4,
     category: "React",
-    categoryName: "React",
-    title: "AudioPhile",
-    lang: ["HTML", "CSS", "React"],
-    url: "https://https://https://github.com/Aycom366/React-Tip-Calculator",
-    live: "https://http://react-tip-calculator.vercel.app/",
+    title: "AudioPhile E-Commerce",
+    lang: ["HTML", "CSS", "REACT"],
+    url: "https://github.com/Aycom366/Audiophile-Ecommerce-Website",
+    live: "http://audiophile-ecommerce-website-blush.vercel.app/",
     slug: "audiophile-website",
     info: "A Fully fledged E-Commerce developed using React Framework. AudioPhile sells gadgets like Heaphones, EarPhones, Speakers of all models",
-    cat: "next",
     images: {
-      mobil: "/images/portfolio/desktop/Finshed-AudioPhile.png",
-      tablet: "/images/portfolio/tablet/Finshed-AudioPhile.png",
-      desktop: "/images/portfolio/desktop/Finshed-AudioPhile.png",
+      mobil: FinishedAudioPhileMobile,
+      tablet: FinishedAudioPhileTablet,
+      desktop: FinishedAudioPhileDesktop,
     },
   },
   {
-    id: 3,
+    id: 5,
     category: "HTML",
-    categoryName: "HTML && CSS",
-    title: "Tip Calculator",
-    lang: ["HTML", "CSS", "React"],
-    url: "https://https://https://github.com/Aycom366/React-Tip-Calculator",
-    live: "https://http://react-tip-calculator.vercel.app/",
-    slug: "tip-website",
-    info: "A Fully fledged E-Commerce developed using React Framework.\nThis Project was done to perfect setting down of reponsiveness in a website.",
-    cat: "next",
+    title: "Loop Studio",
+    lang: ["HTML", "CSS", "JS"],
+    url: "https://github.com/Aycom366/Loop-Studio",
+    live: "http://loop-studio-aycom366.vercel.app/  ",
+    slug: "loop-website",
+    info: "A Fully fledged E-Commerce developed using React Framework. AudioPhile sells gadgets like Heaphones, EarPhones, Speakers of all models",
     images: {
-      mobil: "/images/portfolio/desktop/Finshed-AudioPhile.png",
-      tablet: "/images/portfolio/tablet/Finshed-AudioPhile.png",
-      desktop: "/images/portfolio/desktop/Finshed-AudioPhile.png",
+      mobil: FinishedLoopMobile,
+      tablet: FinishedLoopTablet,
+      desktop: FinishedLoopDesktop,
+    },
+  },
+  {
+    id: 6,
+    category: "HTML",
+    title: "CrowdFunding",
+    lang: ["HTML", "CSS", "JS"],
+    url: "https://github.com/Aycom366/CrowfundingProject",
+    live: "http://crowfunding-project.vercel.app/ ",
+    slug: "crowd-website",
+    info: "CrowdFunding Project is the practice of funding a project or venture by raising small amounts of money from a large number of people, typically via the Internet. Design Challenge By Frontend Mentor, Coded by me",
+    images: {
+      mobil: FinishedCrowdedMobile,
+      tablet: FinishedCrowdedTablet,
+      desktop: FinishedCrowdedDesktop,
+    },
+  },
+  {
+    id: 7,
+    category: "React",
+    title: "Designo Multi-Page",
+    lang: ["HTML", "CSS", "REACT"],
+    url: "https://github.com/Aycom366/Designo-Multi-Page-Website",
+    live: "https://designo-multipage-wesbite.netlify.app/",
+    slug: "designo-website",
+    info: "Designo is basically a multi-page website exploring the use of the LeafLet map Libraries",
+    images: {
+      mobil: FinishedDesignoMobile,
+      tablet: FinishedDesignoTablet,
+      desktop: FinishedDesignoDesktop,
+    },
+  },
+  {
+    id: 7,
+    category: "HTML",
+    title: "Room Studio",
+    lang: ["HTML", "CSS", "JS"],
+    url: "https://github.com/Aycom366/Designo-Multi-Page-Website",
+    live: "https://designo-multipage-wesbite.netlify.app/",
+    slug: "room-website",
+    info: "Room Studio is made to basically test my css layout skills as well as javascript. A slider made with Javascript and auto changing button prev and next functinalities.",
+    images: {
+      mobil: FinishedRoomMobile,
+      tablet: FinishedRoomTablet,
+      desktop: FinishedRoomDesktop,
+    },
+  },
+  {
+    id: 7,
+    category: "HTML",
+    title: "Todo List",
+    lang: ["HTML", "CSS", "JS"],
+    url: "https://github.com/Aycom366/TodoDrag",
+    live: "http://todo-drag.vercel.app/",
+    slug: "todo-website",
+    info: "A Todo list is simply an app made to automate what you will either be doing for the week or for the day.\nData are being saved on localstorage and this app also has the ability to reorder rows.",
+    images: {
+      mobil: FinishedTODOMobile,
+      tablet: FinishedTODOTablet,
+      desktop: FinishedTODODesktop,
+    },
+  },
+  {
+    id: 8,
+    category: "C#",
+    title: "Battery Alarm",
+    lang: ["C#"],
+    url: "hhttps://github.com/Aycom366/BatteryChecked",
+    slug: "battery",
+    info: "Battery Alarm is a desktop app made to automate the removal of charger when plugged in.\nThe way it works goes thus: if a laptop or a desktop is being charged and the battery is now fully charged. i.e battery is now 100%, This software then alarms you to unplug the system from whatever powersource is plugged to.",
+    images: {
+      mobil: BatteryChecker,
+    },
+  },
+  {
+    id: 9,
+    category: "VB",
+    title: "File Security",
+    lang: ["VB.Net"],
+    url: "https://github.com/Aycom366/Folder-encryption-decryption",
+    slug: "file",
+    info: "File Security is a desktop app that encourages file and folde securities.\nThis app basically encrypts file, lock files and folders, hides file and folders.",
+    images: {
+      mobil: file,
+    },
+  },
+  {
+    id: 10,
+    category: "C#",
+    title: "Employee Monitoring System",
+    lang: ["C#"],
+    url: "https://github.com/comeriver/workplace",
+    live: "https://workplace.comeriver.com/",
+    slug: "keyLog",
+    info: "This is software is basically developed to track and monitor the activities of an employee in an organization.\nThis Project was developed when I was an Intern in Comeriver.com. For more information check the live url icon to learn more about how to use this app.",
+    images: {
+      mobil: workspace,
+    },
+  },
+  {
+    id: 11,
+    category: "VB",
+    title: "Car Wash System",
+    lang: ["VB,'Report Viewer"],
+    url: "https://github.com/Aycom366/car-wash",
+    slug: "carwash",
+    info: "A Car wash management system developed to automate individuals or companies that wants to automate their Car Wash Companies.\nThis software keeps tracks of car being brought in for washing and also calculates report either daily or weekly or monthly.",
+    images: {
+      mobil: carwash,
     },
   },
 ];

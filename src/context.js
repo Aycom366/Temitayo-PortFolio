@@ -17,6 +17,15 @@ export const AppProvider = ({ children }) => {
   const [isMoved, setIsMoved] = useState(false);
 
   useEffect(() => {
+    function handleResize() {
+      setGetWidth(getWindowWidth());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
     const doc = document.addEventListener("scroll", (e) => {
       let scrolled = document.scrollingElement.scrollTop;
       console.log(getWidth);
@@ -36,15 +45,6 @@ export const AppProvider = ({ children }) => {
     "All",
     ...new Set(data.map((category) => category.category)),
   ];
-
-  useEffect(() => {
-    function handleResize() {
-      setGetWidth(getWindowWidth());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <AppContext.Provider

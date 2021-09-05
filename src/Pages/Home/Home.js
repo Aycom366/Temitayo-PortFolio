@@ -58,14 +58,14 @@ function Home() {
           <div className="about-me-section">
             <h2 data-aos="fade-left">About Me</h2>
             <p data-aos="fade-left" data-aos-delay="400">
-              I’m a junior front-end developer looking for a new role in an
-              exciting company. I focus on writing accessible HTML, using modern
-              CSS practices and writing clean JavaScript. When writing
-              JavaScript code, I mostly use React, but I can adapt to whatever
-              tools are required. I’m based in Nigeria, the city of Ibadan, but
-              I’m happy working remotely and have experience in remote teams.
-              When I’m not coding, you’ll find me outdoors. I love music
-              especially playing piano. I'd love you to check my work.
+              I’m a front-end developer looking for a new role in an exciting
+              company. I focus on writing accessible HTML, using modern CSS
+              practices and writing clean JavaScript. When writing JavaScript
+              code, I mostly use React, but I can adapt to whatever tools are
+              required. I’m based in Nigeria, the city of Ibadan, but I’m happy
+              working remotely and have experience in remote teams. When I’m not
+              coding, you’ll find me outdoors. I love music especially playing
+              piano. I'd love you to check my work.
             </p>
             <Link
               data-aos="fade-left"
@@ -100,7 +100,7 @@ function Home() {
             >
               <p>Javscript</p>
               <div className="container-skills">
-                <div className="skills javascript">70%</div>
+                <div className="skills javascript">80%</div>
               </div>
             </div>
             <div data-aos="fade-right" className="skillsCon">
@@ -116,7 +116,7 @@ function Home() {
             >
               <p>C#</p>
               <div className="container-skills">
-                <div className="skills C">60%</div>
+                <div className="skills C">70%</div>
               </div>
             </div>
             <div data-aos="fade-right" className="skillsCon">

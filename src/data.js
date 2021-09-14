@@ -258,7 +258,7 @@ const projects = [
     category: "React",
     title: "Temitayo",
     lang: ["Html", "React", "Context API"],
-    url: "https://github.com/Aycom366/Temitayo-PortFolio",
+    url: "https://github.com/Aycom366/Temitayo-Portfolio",
     slug: "temitayo",
     info: "My Portfolio's Website made using React and Context Api including formspree as my endpoint for receivingg emails.",
     images: {

@@ -8,7 +8,7 @@ function Footer() {
     return year;
   };
   return (
-    <main className="footer">
+    <footer className="footer">
       <div className="foot container">
         <div className="footer-container">
           <div className="footer-left">
@@ -23,7 +23,7 @@ function Footer() {
                 </svg>
               </Link>
             </div>
-            <section className="footer-container-links">
+            <div className="footer-container-links">
               <NavLink exact aria-current="page" className="links" to="/">
                 Home
               </NavLink>
@@ -37,7 +37,7 @@ function Footer() {
               <NavLink aria-current="location" className="links" to="/contact">
                 Contact Me
               </NavLink>
-            </section>
+            </div>
           </div>
           <div className="footer-right">
             <SocialMedia />

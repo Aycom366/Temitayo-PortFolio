@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <main className="home-container">
-      <section className="hero">
+    <div className="home-container">
+      <div className="hero">
         <div className="hero-container container">
           <div data-aos="fade-right" className="mobileback">
             <img src={mobileBackground} alt="Temitayo" />
@@ -44,7 +44,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </div>
 
       <section id="about" className="about">
         <div className="about-me container">
@@ -144,7 +144,7 @@ function Home() {
           </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 

@@ -11,6 +11,7 @@ function Contact() {
     formState: { errors },
     trigger,
     reset,
+    setFocus,
   } = useForm();
 
   const onSubmit = (data) => {

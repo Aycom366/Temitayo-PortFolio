@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="hero">
+    <main className="home-container">
+      <section className="hero">
         <div className="hero-container container">
           <div data-aos="fade-right" className="mobileback">
             <img src={mobileBackground} alt="Temitayo" />
@@ -18,7 +18,7 @@ function Home() {
               <br />
               Freelance Web designer And C# developer.
             </h1>
-            <button aria-label="Goto About Page" className="btn-about">
+            <button className="btn-about">
               <div className="about-img">
                 <img
                   data-aos="fade-left"
@@ -44,9 +44,9 @@ function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="about" className="about">
+      <section id="about" className="about">
         <div className="about-me container">
           <div className="my-image">
             <img
@@ -55,7 +55,7 @@ function Home() {
               alt="Ayomide Temitayo Bamigboye"
             />
           </div>
-          <div className="about-me-div">
+          <div className="about-me-section">
             <h2 data-aos="fade-left">About Me</h2>
             <p data-aos="fade-left" data-aos-delay="400">
               I’m a front-end developer looking for a new role in an exciting
@@ -77,15 +77,15 @@ function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* skillds */}
-      <div className="skills-div">
-        <div className="container skillsInfo">
-          <div className="flex">
+      <section className="skills-section">
+        <section className="container skillsInfo">
+          <section className="flex">
             <h1>Skills</h1>
             <div className="underline"></div>
-          </div>
+          </section>
           <div className=" skills-container">
             <div data-aos="fade-right" className="skillsCon">
               <p>HTML/CSS</p>
@@ -126,8 +126,8 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
       {/* intersted to contact */}
       <div className="interested">
@@ -144,7 +144,7 @@ function Home() {
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

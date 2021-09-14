@@ -3,6 +3,16 @@ import nextDesktop from "./images/portfolio/desktop/next.png";
 import nextTablet from "./images/portfolio/tablet/next.png";
 import nextMobile from "./images/portfolio/mobile/next.png";
 
+//Portfolio
+import portDesktop from "./images/portfolio/desktop/DesktopPortFolioProject.png";
+import portTablet from "./images/portfolio/tablet/TabletPortFolioProject.png";
+import portMobile from "./images/portfolio/mobile/MobilePortFolioProject.png";
+
+//Invoice
+import invoiceDesktop from "./images/portfolio/desktop/InvoiceProjectDesktop.png";
+import invoiceTablet from "./images/portfolio/tablet/InvoiceProjectTablet.png";
+import invoiceMobile from "./images/portfolio/mobile/InvoiceProjectMobile.png";
+
 //colors
 import colorDesktop from "./images/portfolio/desktop/color.png";
 import colorTablet from "./images/portfolio/tablet/color.png";
@@ -199,9 +209,9 @@ const projects = [
     category: "C#",
     title: "Battery Alarm",
     lang: ["C#"],
-    url: "hhttps://github.com/Aycom366/BatteryChecked",
+    url: "https://github.com/Aycom366/BatteryAlarm",
     slug: "battery",
-    info: "Battery Alarm is a desktop app made to automate the removal of charger when plugged in.\nThe way it works goes thus: if a laptop or a desktop is being charged and the battery is now fully charged. i.e battery is now 100%, This software then alarms you to unplug the system from whatever powersource is plugged to.",
+    info: "Battery Alarm is a desktop app made to automate the removal of charger when plugged in.\nThe way it works goes thus: if a laptop or a desktop is being charged and the battery is now fully charged. i.e battery is now 100%, This software then alarms you to unplug the system from whatever powersource it being plugged to.",
     images: {
       mobil: BatteryChecker,
     },
@@ -241,6 +251,35 @@ const projects = [
     info: "A Car wash management system developed to automate individuals or companies that wants to automate their Car Wash Companies.\nThis software keeps tracks of car being brought in for washing and also calculates report either daily or weekly or monthly.",
     images: {
       mobil: carwash,
+    },
+  },
+  {
+    id: 12,
+    category: "React",
+    title: "Temitayo",
+    lang: ["Html", "React", "Context API"],
+    url: "https://github.com/Aycom366/Temitayo-PortFolio",
+    slug: "temitayo",
+    info: "My Portfolio's Website made using React and Context Api including formspree as my endpoint for receivingg emails.",
+    images: {
+      mobil: portMobile,
+      tablet: portTablet,
+      desktop: portDesktop,
+    },
+  },
+  {
+    id: 13,
+    category: "React",
+    title: "Invoice App",
+    lang: ["React", "Redux", "Context API"],
+    url: "https://github.com/Aycom366/Invoices",
+    live: "https://invoices-beta.vercel.app/",
+    slug: "invoice",
+    info: "This Project was made to cement my knowledge in using Redux for state management including Formik to handle Forms States and Data.\nThis Project has the ability to create, read back into inputs, delete invoice including creating dynamic inputs and validations. Localstorage is used to save invoices created and also get the current theme selected by users. The switch to light and dark theme is not excluded",
+    images: {
+      mobil: invoiceMobile,
+      tablet: invoiceTablet,
+      desktop: invoiceDesktop,
     },
   },
 ];

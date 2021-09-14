@@ -22,12 +22,12 @@ function PortFolio() {
   };
 
   return (
-    <main className="portfolio">
+    <div className="portfolio">
       <div className="portfolio-container  container">
-        <section className="flex">
+        <div className="flex">
           <h1>All Projects</h1>
           <div className="underline"></div>
-        </section>
+        </div>
         <form className="flex language">
           <label htmlFor="lang">Filter By Language</label>
           <select
@@ -45,7 +45,7 @@ function PortFolio() {
             })}
           </select>
         </form>
-        <section className="portContainer">
+        <div className="portContainer">
           {categories.map((portfolio, index) => {
             const { title, images, lang, live, url } = portfolio;
             return (
@@ -85,9 +85,9 @@ function PortFolio() {
               </div>
             );
           })}
-        </section>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
 

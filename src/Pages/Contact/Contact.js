@@ -11,13 +11,7 @@ function Contact() {
     formState: { errors },
     trigger,
     reset,
-    setFocus,
   } = useForm();
-
-  useEffect(() => {
-    setFocus("name");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const onSubmit = (data) => {
     axios.post(baseURL, {
@@ -32,7 +26,7 @@ function Contact() {
   const baseURL = "https://formspree.io/f/mdoyprwn";
 
   return (
-    <main className="contact">
+    <div className="contact">
       <div className="contact-container container">
         <div className="get-in-touch first">
           <h2 data-aos="fade-right">Get in Touch</h2>
@@ -107,7 +101,7 @@ function Contact() {
           </form>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 

@@ -9,7 +9,7 @@ import twitterBlue from "../images/icons/twitter-blue.svg";
 
 function SocialMedia({ className }) {
   return (
-    <section className="footer-social">
+    <div className="footer-social">
       <NavLink
         to={{ pathname: "https://github.com/aycom366" }}
         target="_blank"
@@ -52,7 +52,7 @@ function SocialMedia({ className }) {
           alt="Temitayo Linkedin"
         />
       </NavLink>
-    </section>
+    </div>
   );
 }
 

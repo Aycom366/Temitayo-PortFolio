@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import MoreIcon from "@material-ui/icons/More";
 import LanguageIcon from "@material-ui/icons/Language";
 
 function PortFolio() {

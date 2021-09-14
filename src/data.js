@@ -57,7 +57,7 @@ import FinishedTODOMobile from "./images/portfolio/mobile/Finshed-TODO.png";
 import BatteryChecker from "./images/portfolio/mobile/Battery.png";
 
 //studentId
-import StudentId from "./images/portfolio/mobile/StudentId.png";
+//import StudentId from "./images/portfolio/mobile/StudentId.png";
 
 //carwash
 import carwash from "./images/portfolio/mobile/Gee-Man-CarWash.png";
@@ -175,7 +175,7 @@ const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     category: "HTML",
     title: "Room Studio",
     lang: ["HTML", "CSS", "JS"],
@@ -190,7 +190,7 @@ const projects = [
     },
   },
   {
-    id: 7,
+    id: 9,
     category: "HTML",
     title: "Todo List",
     lang: ["HTML", "CSS", "JS"],
@@ -205,7 +205,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 10,
     category: "C#",
     title: "Battery Alarm",
     lang: ["C#"],
@@ -217,7 +217,7 @@ const projects = [
     },
   },
   {
-    id: 9,
+    id: 11,
     category: "VB",
     title: "File Security",
     lang: ["VB.Net"],
@@ -229,7 +229,7 @@ const projects = [
     },
   },
   {
-    id: 10,
+    id: 12,
     category: "C#",
     title: "Employee Monitoring System",
     lang: ["C#"],
@@ -242,7 +242,7 @@ const projects = [
     },
   },
   {
-    id: 11,
+    id: 13,
     category: "VB",
     title: "Car Wash System",
     lang: ["VB", " Report Viewer"],
@@ -254,7 +254,7 @@ const projects = [
     },
   },
   {
-    id: 12,
+    id: 14,
     category: "React",
     title: "Temitayo",
     lang: ["Html", "React", "Context API"],
@@ -268,7 +268,7 @@ const projects = [
     },
   },
   {
-    id: 13,
+    id: 15,
     category: "React",
     title: "Invoice App",
     lang: ["React", "Redux", "Context API"],

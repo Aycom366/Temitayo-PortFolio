@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import downArrow from "../../images/icons/down-arrows.svg";
 import Temi from "../../images/homepage/desktop/Temi.jpg";
 import mobileBackground from "../../images/homepage/mobile/image-homepage-hero@2x.jpg";

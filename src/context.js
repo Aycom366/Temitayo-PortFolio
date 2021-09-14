@@ -28,7 +28,6 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     const doc = document.addEventListener("scroll", (e) => {
       let scrolled = document.scrollingElement.scrollTop;
-      console.log(getWidth);
       if (scrolled >= 150 && getWidth > 600) {
         setIsMoved(true);
       } else {

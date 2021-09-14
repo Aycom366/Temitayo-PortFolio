@@ -48,7 +48,7 @@ function Footer() {
           <span> {getYear()}</span> Temitayo. All Rights Reserved.
         </p>
       </div>
-    </main>
+    </footer>
   );
 }
 

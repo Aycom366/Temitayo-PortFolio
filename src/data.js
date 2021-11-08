@@ -305,7 +305,7 @@ const projects = [
     id: 17,
     category: "React",
     title: "Country",
-    lang: ["React", "Redux", "Tailwind"],
+    lang: ["React", "Context API", "Tailwind"],
     url: "https://github.com/Aycom366/country-rest",
     live: "https://country-rest.vercel.app/",
     slug: "country",

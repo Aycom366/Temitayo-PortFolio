@@ -68,6 +68,12 @@ import file from "./images/portfolio/mobile/File.png";
 //workspace
 import workspace from "./images/portfolio/mobile/workspace.png";
 
+//cryptoVerse
+import cryptoVerse from "./images/portfolio/mobile/cryptoverse.PNG";
+
+//Country Rest
+import country from "./images/portfolio/mobile/country.PNG";
+
 const projects = [
   {
     id: 1,
@@ -280,6 +286,32 @@ const projects = [
       mobil: invoiceMobile,
       tablet: invoiceTablet,
       desktop: invoiceDesktop,
+    },
+  },
+  {
+    id: 16,
+    category: "React",
+    title: "CryptoVerse",
+    lang: ["React", "Redux toolkit", "Ant Design"],
+    url: "https://github.com/Aycom366/cryptoverse",
+    live: "https://cryptoverse-seven.vercel.app/",
+    slug: "cryptoverse",
+    info: "Cryptoverse is basically a crypto website build using react toolkit.",
+    images: {
+      mobil: cryptoVerse,
+    },
+  },
+  {
+    id: 17,
+    category: "React",
+    title: "Country",
+    lang: ["React", "Redux", "Tailwind"],
+    url: "https://github.com/Aycom366/country-rest",
+    live: "https://country-rest.vercel.app/",
+    slug: "country",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: country,
     },
   },
 ];

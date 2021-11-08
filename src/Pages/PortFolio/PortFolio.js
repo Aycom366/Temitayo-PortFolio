@@ -6,7 +6,6 @@ import LanguageIcon from "@material-ui/icons/Language";
 
 function PortFolio() {
   const { data, dropDownCategories } = useGlobalContext();
-
   const [categories, setcategories] = React.useState(data);
 
   const filterItem = (category) => {

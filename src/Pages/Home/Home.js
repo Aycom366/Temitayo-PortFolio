@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import downArrow from "../../images/icons/down-arrows.svg";
 import Temi from "../../images/homepage/desktop/Temi.jpg";
 import mobileBackground from "../../images/homepage/mobile/image-homepage-hero@2x.jpg";
 import { Link } from "react-router-dom";
+import cSharp from "../../images/skills/c#.png";
+import vb from "../../images/skills/vb.png";
+import css from "../../images/skills/css.png";
+import git from "../../images/skills/git.png";
+import html from "../../images/skills/html.png";
+import js from "../../images/skills/js.png";
+import react from "../../images/skills/react.png";
+import toolkit from "../../images/skills/toolKit.png";
+import styled from "../../images/skills/styled.png";
+import bootstrap from "../../images/skills/bootstrap.png";
+import tail from "../../images/skills/tailwind.png";
 
 function Home() {
+  let count = 100;
+  const [imgArray] = useState([
+    html,
+    css,
+    bootstrap,
+    tail,
+    js,
+    react,
+    toolkit,
+    styled,
+    cSharp,
+    vb,
+    git,
+  ]);
   return (
     <div className="home-container">
       <div className="hero">
@@ -86,45 +111,20 @@ function Home() {
             <h1>Skills</h1>
             <div className="underline"></div>
           </section>
-          <div className=" skills-container">
-            <div data-aos="fade-right" className="skillsCon">
-              <p>HTML/CSS</p>
-              <div className="container-skills">
-                <div className="skills html">90%</div>
-              </div>
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-delay="200"
-              className="skillsCon"
-            >
-              <p>Javscript</p>
-              <div className="container-skills">
-                <div className="skills javascript">80%</div>
-              </div>
-            </div>
-            <div data-aos="fade-right" className="skillsCon">
-              <p>React</p>
-              <div className="container-skills">
-                <div className="skills react">80%</div>
-              </div>
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-delay="200"
-              className="skillsCon"
-            >
-              <p>C#</p>
-              <div className="container-skills">
-                <div className="skills C">70%</div>
-              </div>
-            </div>
-            <div data-aos="fade-right" className="skillsCon">
-              <p>Visual Basic</p>
-              <div className="container-skills">
-                <div className="skills vb">70%</div>
-              </div>
-            </div>
+          <div className="skills-container">
+            {imgArray.map((imgg, index) => {
+              count += 100;
+              return (
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay={count}
+                  key={index}
+                  className="img-container"
+                >
+                  <img className="img-class-cover" src={imgg} alt={imgg} />
+                </div>
+              );
+            })}
           </div>
         </section>
       </section>

@@ -19,7 +19,7 @@ function Contact() {
       email: data.email,
       message: data.message,
     });
-    alert("Thanks for your message");
+    alert("Thanks for your message, I will respond as soon as possible");
     reset();
   };
 

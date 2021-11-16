@@ -14,6 +14,7 @@ import toolkit from "../../images/skills/toolKit.png";
 import styled from "../../images/skills/styled.png";
 import bootstrap from "../../images/skills/bootstrap.png";
 import tail from "../../images/skills/tailwind.png";
+import Ts from "../../images/skills/typescript.png";
 
 function Home() {
   let count = 100;
@@ -23,6 +24,7 @@ function Home() {
     bootstrap,
     tail,
     js,
+    Ts,
     react,
     toolkit,
     styled,

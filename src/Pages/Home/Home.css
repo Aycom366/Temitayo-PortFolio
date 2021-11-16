@@ -1,12 +1,12 @@
 .home-container {
-  margin-top: var(--margin-bottom);
+  margin-top: 100px;
   overflow: hidden;
 }
 .hero {
   height: auto;
 }
 .hero-container {
-  height: 600px;
+  height: 500px;
   width: 100%;
   position: relative;
   background-image: url(../../images/homepage/desktop/image-homepage-hero@2x.jpg);

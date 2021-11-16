@@ -74,6 +74,8 @@ import cryptoVerse from "./images/portfolio/mobile/cryptoverse.PNG";
 //Country Rest
 import country from "./images/portfolio/mobile/country.PNG";
 
+import Reservation from "./images/portfolio/mobile/Reservation.PNG";
+
 const projects = [
   {
     id: 1,
@@ -312,6 +314,19 @@ const projects = [
     info: "This project fetches and display information about current country including neighbouring",
     images: {
       mobil: country,
+    },
+  },
+  {
+    id: 18,
+    category: "Typescript",
+    title: "Reservation",
+    lang: ["React", "Redux Toolkit", "Typescript"],
+    url: "https://github.com/Aycom366/Reservation-Toolkit-Typescript",
+    live: "https://reservation-toolkit-typescript.vercel.app/",
+    slug: "reserve",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: Reservation,
     },
   },
 ];

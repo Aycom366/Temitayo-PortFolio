@@ -74,7 +74,7 @@ import cryptoVerse from "./images/portfolio/mobile/cryptoverse.PNG";
 //Country Rest
 import country from "./images/portfolio/mobile/country.PNG";
 
-import Reservation from "./images/portfolio/mobile/Reservation.PNG";
+import Reservation from "./images/portfolio/mobile/typescript.PNG";
 
 const projects = [
   {
@@ -319,11 +319,11 @@ const projects = [
   {
     id: 18,
     category: "Typescript",
-    title: "Reservation",
-    lang: ["React", "Redux Toolkit", "Typescript"],
-    url: "https://github.com/Aycom366/Reservation-Toolkit-Typescript",
-    live: "https://reservation-toolkit-typescript.vercel.app/",
-    slug: "reserve",
+    title: "Todo Drag and Drop",
+    lang: ["React", "Semantic HTML", "Typescript"],
+    url: "https://github.com/Aycom366/React-Drag-Drop-Typescript",
+    live: "https://react-drag-drop-typescript.vercel.app/",
+    slug: "drag",
     info: "This project fetches and display information about current country including neighbouring",
     images: {
       mobil: Reservation,

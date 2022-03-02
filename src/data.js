@@ -76,6 +76,18 @@ import country from "./images/portfolio/mobile/country.PNG";
 
 import Reservation from "./images/portfolio/mobile/typescript.PNG";
 
+//dashboard
+import dashboard from "./images/portfolio/mobile/dashboard.PNG";
+
+//chat
+import chat from "./images/portfolio/mobile/chat.PNG";
+
+//feedback
+import feedback from "./images/portfolio/mobile/feedback.PNG";
+
+//mass
+import mass from "./images/portfolio/mobile/mass.PNG";
+
 const projects = [
   {
     id: 1,
@@ -318,7 +330,7 @@ const projects = [
   },
   {
     id: 18,
-    category: "Typescript",
+    category: "React",
     title: "Todo Drag and Drop",
     lang: ["React", "Semantic HTML", "Typescript"],
     url: "https://github.com/Aycom366/React-Drag-Drop-Typescript",
@@ -327,6 +339,58 @@ const projects = [
     info: "This project fetches and display information about current country including neighbouring",
     images: {
       mobil: Reservation,
+    },
+  },
+  {
+    id: 19,
+    category: "MERN",
+    title: "Feedback App",
+    lang: ["MERN", "FE: Typescript"],
+    url: "https://github.com/Aycom366/product-feedback-app-frontend",
+    live: "https://product-feedback-app-frontend.netlify.app/",
+    slug: "feedback",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: feedback,
+    },
+  },
+  {
+    id: 20,
+    category: "MERN",
+    title: "Chat App",
+    lang: ["MERN", "FE: Typescript"],
+    url: "https://github.com/Aycom366/mern-chat-app-frontend",
+    live: "https://aydotcom-chat.netlify.app/",
+    slug: "chat",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: chat,
+    },
+  },
+  {
+    id: 21,
+    category: "React",
+    title: "Mass",
+    lang: ["React", "Firebase", "ChakraUI"],
+    url: "https://github.com/Aycom366/Mass",
+    live: "https://masscitytour.com.ng",
+    slug: "chat",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: mass,
+    },
+  },
+  {
+    id: 22,
+    category: "React",
+    title: "Admin Dashboard",
+    lang: ["React", "Recharts", "Chakra-UI"],
+    url: "https://github.com/Aycom366/Admin-Dashboard",
+    live: "https://admin-dashboard-six.vercel.app/",
+    slug: "admin",
+    info: "This project fetches and display information about current country including neighbouring",
+    images: {
+      mobil: dashboard,
     },
   },
 ];

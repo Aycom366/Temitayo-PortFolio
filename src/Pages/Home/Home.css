@@ -19,7 +19,7 @@
 
 .info {
   max-width: 445px;
-  height: 357px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,7 +164,7 @@
   }
   .info {
     max-width: 514px;
-    height: 278px;
+    height: 200px;
   }
   .my-image {
     width: 281px;

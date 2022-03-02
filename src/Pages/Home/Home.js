@@ -15,6 +15,11 @@ import styled from "../../images/skills/styled.png";
 import bootstrap from "../../images/skills/bootstrap.png";
 import tail from "../../images/skills/tailwind.png";
 import Ts from "../../images/skills/typescript.png";
+import mui from "../../images/skills/mui.jpg";
+import node from "../../images/skills/node.jpg";
+import express from "../../images/skills/express.jpg";
+import mongo from "../../images/skills/mongo.jpg";
+import mongoose from "../../images/skills/mongoose.jpg";
 
 function Home() {
   let count = 100;
@@ -23,11 +28,16 @@ function Home() {
     css,
     bootstrap,
     tail,
+    styled,
+    mui,
     js,
     Ts,
     react,
     toolkit,
-    styled,
+    node,
+    express,
+    mongo,
+    mongoose,
     cSharp,
     vb,
     git,
@@ -41,9 +51,9 @@ function Home() {
           </div>
           <div data-aos="fade-right" className="info">
             <h1 data-aos="fade-left" data-aos-delay="100">
-              Hey, I'm TemiTayo
+              Hey, I'm TemiTayo,
               <br />
-              Freelance Web designer And C# developer.
+              Fullstack Web Developer.
             </h1>
             <button className="btn-about">
               <div className="about-img">
@@ -110,7 +120,7 @@ function Home() {
       <section className="skills-section">
         <section className="container skillsInfo">
           <section className="flex">
-            <h1>Skills</h1>
+            <h1>Technical Skills</h1>
             <div className="underline"></div>
           </section>
           <div className="skills-container">

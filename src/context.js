@@ -16,11 +16,11 @@ export const AppProvider = ({ children }) => {
 
   const [isMoved, setIsMoved] = useState(false);
 
+  //getting currentWidth
   useEffect(() => {
     function handleResize() {
       setGetWidth(getWindowWidth());
     }
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

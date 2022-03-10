@@ -199,8 +199,8 @@ const projects = [
     category: "HTML",
     title: "Room Studio",
     lang: ["HTML", "CSS", "JS"],
-    url: "https://github.com/Aycom366/Designo-Multi-Page-Website",
-    live: "https://designo-multipage-wesbite.netlify.app/",
+    url: "https://github.com/Aycom366/Room",
+    live: "https://room-aycom366.vercel.app/",
     slug: "room-website",
     info: "Room Studio is made to basically test my css layout skills as well as javascript. A slider made with Javascript and auto changing button prev and next functinalities.",
     images: {

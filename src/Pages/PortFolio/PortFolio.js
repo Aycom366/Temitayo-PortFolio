@@ -57,6 +57,7 @@ function PortFolio() {
                     />
                     <source media='(min-width: 768px)' srcset={images.tablet} />
                     <img
+                      loading='lazy'
                       style={{ objectFit: "contain" }}
                       src={images.mobil}
                       alt={title}

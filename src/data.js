@@ -266,8 +266,7 @@ const projects = [
     category: "React",
     title: "Mass",
     lang: ["React", "Firebase", "ChakraUI"],
-    url: "https://github.com/Aycom366/Mass",
-    live: "https://masscitytour.com.ng",
+    live: "https://www.massmovementglobal.org",
     slug: "chat",
     info: "This project fetches and display information about current country including neighbouring",
     images: {

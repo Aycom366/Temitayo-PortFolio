@@ -52,7 +52,6 @@ export const AppProvider = ({ children }) => {
         setIsNavOpen,
         data,
         getWidth,
-        data,
         isMoved,
         dropDownCategories,
       }}

@@ -77,6 +77,8 @@ import merchant from "./images/portfolio/mobile/merchant.png";
 //rapaid
 import Rapaid from "./images/portfolio/mobile/rapaid.png";
 
+import Whatsapp from "./images/portfolio/mobile/whatsapp.png";
+
 //file
 import file from "./images/portfolio/mobile/File.png";
 
@@ -104,6 +106,19 @@ import feedback from "./images/portfolio/mobile/feedback.PNG";
 import mass from "./images/portfolio/mobile/mass.PNG";
 
 const projects = [
+  {
+    id: 30,
+    category: "MERN",
+    title: "Whatsapp Clone",
+    lang: ["Nextjs", "Typescript", "Nestjs", "Prisma"],
+    live: "https://whatsapp-clone-ten-pi.vercel.app/",
+    url: "https://github.com/Aycom366/nest-whatsapp-clone",
+    slug: "rapaid",
+    info: "A whatsapp web clone featuring calls, audio messages, group chats, group description update etc.",
+    images: {
+      mobil: Whatsapp,
+    },
+  },
   {
     id: 29,
     category: "React Native",

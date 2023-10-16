@@ -99,6 +99,9 @@ import dashboard from "./images/portfolio/mobile/dashboard.PNG";
 //chat
 import chat from "./images/portfolio/mobile/chat.PNG";
 
+//notion
+import notion from "./images/portfolio/mobile/notion.png";
+
 //feedback
 import feedback from "./images/portfolio/mobile/feedback.PNG";
 
@@ -129,6 +132,19 @@ const projects = [
     info: "Empower your financial journey: Apply for loans, manage bills, and track savings with our app, available on Android and iOS.",
     images: {
       mobil: Rapaid,
+    },
+  },
+  {
+    id: 31,
+    category: "MERN",
+    title: "Notion Clone",
+    lang: ["NextJS", "Convex", "Typescript", "Clerk"],
+    live: "https://notion-clone-pi.vercel.app/",
+    url: "https://github.com/Aycom366/notion-clone",
+    slug: "rapaid",
+    info: "A notion clone built using Next 13, Convex as the database and Clerk as the authentication provider",
+    images: {
+      mobil: notion,
     },
   },
   {

@@ -129,7 +129,7 @@ function Home() {
                 exciting challenge I'm ready to embrace.
               </p>
               <p>
-                While I'm currently based in Ibadan, Nigeria, I'm open to remote
+                While I'm currently based in Lagos, Nigeria, I'm open to remote
                 work opportunities and have a track record of successful
                 collaboration in remote teams. Beyond coding, I find solace
                 outdoors and enjoy playing the piano and creating music. Feel

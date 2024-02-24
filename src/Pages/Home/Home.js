@@ -123,12 +123,6 @@ function Home() {
                 end-to-end solutions that meet diverse business needs.
               </p>
               <p>
-                As I expand my horizons, I'm eager to explore the realm of
-                mobile app development using React Native and TypeScript.
-                Crafting user-friendly and performant mobile experiences is an
-                exciting challenge I'm ready to embrace.
-              </p>
-              <p>
                 While I'm currently based in Lagos, Nigeria, I'm open to remote
                 work opportunities and have a track record of successful
                 collaboration in remote teams. Beyond coding, I find solace

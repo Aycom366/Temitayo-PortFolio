@@ -63,7 +63,7 @@ function Home() {
             <h1 data-aos='fade-left' data-aos-delay='100'>
               Hey, I'm TemiTayo,
               <br />
-              Fullstack Web Developer.
+              A Software Developer.
             </h1>
             <button className='btn-about'>
               <div className='about-img'>

@@ -76,6 +76,8 @@ import merchant from "./images/portfolio/mobile/merchant.png";
 
 //rapaid
 import Rapaid from "./images/portfolio/mobile/rapaid.png";
+import Cyclekits from "./images/portfolio/mobile/cyclekits.jpeg";
+import Paywave from "./images/portfolio/mobile/paywave.jpeg";
 
 import Whatsapp from "./images/portfolio/mobile/whatsapp.png";
 
@@ -109,6 +111,30 @@ import feedback from "./images/portfolio/mobile/feedback.PNG";
 import mass from "./images/portfolio/mobile/mass.PNG";
 
 const projects = [
+  {
+    id: 32,
+    category: "React Native",
+    title: "Cyclekits Vendor",
+    lang: ["React Native", "Expo", "Typescript"],
+    live: "https://play.google.com/store/apps/details?id=com.aycom366.Cyclekits",
+    slug: "cyclekits",
+    info: "Cyclekits is committed to health awareness, promotion of menstrual hygiene and improved access to health care, especially for women and children..",
+    images: {
+      mobil: Cyclekits,
+    },
+  },
+  {
+    id: 31,
+    category: "React Native",
+    title: "Paywave",
+    lang: ["React Native", "Expo", "Typescript"],
+    live: "https://play.google.com/store/apps/details?id=com.toludev.Paywave",
+    slug: "rapaid",
+    info: "Empower your financial journey: Apply for loans, manage bills, and track savings with our app, available on Android and iOS.",
+    images: {
+      mobil: Paywave,
+    },
+  },
   {
     id: 30,
     category: "MERN",

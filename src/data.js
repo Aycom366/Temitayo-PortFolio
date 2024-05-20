@@ -128,7 +128,7 @@ const projects = [
   {
     id: 32,
     category: "React Native",
-    title: "Cyclekits Vendor",
+    title: "Cyclekits",
     lang: ["React Native", "Expo", "Typescript"],
     live: "https://play.google.com/store/apps/details?id=com.aycom366.Cyclekits",
     slug: "cyclekits",

@@ -119,6 +119,7 @@ const projects = [
     title: "Doc Chat",
     lang: ["NextJs", "LangChain", "Typescript", "OpenAI"],
     live: "https://doc-chat-web.netlify.app",
+    url: "https://github.com/Aycom366/DocChat",
     slug: "shopazhub",
     info: "DocChat allows you to have conversations with any PDF document. Simply upload your file and start asking questions right away.",
     images: {

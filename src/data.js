@@ -110,7 +110,21 @@ import feedback from "./images/portfolio/mobile/feedback.PNG";
 //mass
 import mass from "./images/portfolio/mobile/mass.PNG";
 
+import docchat from "./images/portfolio/mobile/doc-chat.png";
+
 const projects = [
+  {
+    id: 33,
+    category: "NextJs",
+    title: "Doc Chat",
+    lang: ["NextJs", "LangChain", "Typescript", "OpenAI"],
+    live: "https://doc-chat-web.netlify.app",
+    slug: "shopazhub",
+    info: "DocChat allows you to have conversations with any PDF document. Simply upload your file and start asking questions right away.",
+    images: {
+      mobil: docchat,
+    },
+  },
   {
     id: 32,
     category: "React Native",
@@ -139,7 +153,7 @@ const projects = [
     id: 30,
     category: "MERN",
     title: "Whatsapp Clone",
-    lang: ["Nextjs", "Typescript", "Nestjs", "Prisma"],
+    lang: ["NextJs", "Typescript", "Nestjs", "Prisma"],
     live: "https://whatsapp-clone-ten-pi.vercel.app/",
     url: "https://github.com/Aycom366/nest-whatsapp-clone",
     slug: "rapaid",
@@ -162,7 +176,7 @@ const projects = [
   },
   {
     id: 31,
-    category: "MERN",
+    category: "NextJs",
     title: "Notion Clone",
     lang: ["NextJS", "Convex", "Typescript", "Clerk"],
     live: "https://notion-clone-pi.vercel.app/",
@@ -177,7 +191,7 @@ const projects = [
     id: 23,
     category: "MERN",
     title: "ZeeH Africa",
-    lang: ["Nextjs", "Expressjs", "Typescript"],
+    lang: ["NextJs", "Expressjs", "Typescript"],
     live: "https://zeeh.africa",
     slug: "zeeh",
     info: "ZEEH OPEN BANKING makes it easy for users to connect their financial accounts securely and quickly, giving you the best growth for your business",
@@ -189,7 +203,7 @@ const projects = [
     id: 24,
     category: "MERN",
     title: "ZeeH Widget",
-    lang: ["Nextjs", "Expressjs", "Typescript"],
+    lang: ["NextJs", "Expressjs", "Typescript"],
     live: "https://widget.zeeh.com/Ayo",
     slug: "zeeh-widget",
     info: "Introducing the ZEEH Open Banking widget – the sleek UI that powers ZEEH's React npm packages. Connect users effortlessly with our intuitive interface.",
@@ -201,7 +215,7 @@ const projects = [
     id: 25,
     category: "MERN",
     title: "ZeeH Dashboard",
-    lang: ["Nextjs", "Expressjs", "Typescript"],
+    lang: ["NextJs", "Expressjs", "Typescript"],
     live: "https://dash.zeeh.africa",
     slug: "zeeh-dashboard",
     info: "Manage users's data on the zeeh dashboard, see who is connected, get credit score. etc",
@@ -211,9 +225,9 @@ const projects = [
   },
   {
     id: 26,
-    category: "React",
+    category: "NextJs",
     title: "FinezCV",
-    lang: ["Nextjs", "Tailwindcss", "Typescript"],
+    lang: ["NextJs", "Tailwindcss", "Typescript"],
     live: "https://app.finezcv.com",
     slug: "finezcv-dashboard",
     info: "AI powered Resume builder",
@@ -223,9 +237,9 @@ const projects = [
   },
   {
     id: 27,
-    category: "React",
+    category: "NextJs",
     title: "Shopazhub Storefront",
-    lang: ["Nextjs", "ChakraUI", "Typescript"],
+    lang: ["NextJs", "ChakraUI", "Typescript"],
     live: "https://shopazhub.com",
     slug: "shopazhub",
     info: "Shop for the latest fashion, gadgets, and electronics items hassle-free on Shopazhub Marketplace from trusted SMEs at an amazing price",
@@ -235,9 +249,9 @@ const projects = [
   },
   {
     id: 28,
-    category: "React",
+    category: "NextJs",
     title: "Shopazhub Merchant",
-    lang: ["Nextjs", "ChakraUI", "Typescript"],
+    lang: ["NextJs", "ChakraUI", "Typescript"],
     live: "https://useshopazhub.com",
     slug: "usehopazhub",
     info: "Shop for the latest fashion, gadgets, and electronics items hassle-free on Shopazhub Marketplace from trusted SMEs at an amazing price",

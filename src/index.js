@@ -6,6 +6,13 @@ import { AppProvider } from "./context";
 import "aos/dist/aos.css";
 import aos from "aos";
 import { BrowserRouter as Router } from "react-router-dom";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "GTM-MZT6KK8F",
+};
+
+TagManager.initialize(tagManagerArgs);
 
 aos.init({ duration: 1000 });
 

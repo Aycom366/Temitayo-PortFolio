@@ -15,9 +15,9 @@ function App() {
       <ScrollToTop />
       <Overlay />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={PortFolio} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/portfolio' component={PortFolio} />
+        <Route exact path='/contact' component={Contact} />
       </Switch>
       <Footer />
     </main>

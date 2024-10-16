@@ -9,47 +9,46 @@ import twitterBlue from "../images/icons/twitter-blue.svg";
 
 function SocialMedia({ className }) {
   return (
-    <div className="footer-social">
+    <div className='footer-social'>
       <NavLink
         to={{ pathname: "https://github.com/aycom366" }}
-        target="_blank"
+        target='_blank'
         className={`social-links ${className}`}
         data-aos={`${className && "fade-left"}`}
         data-aos-delay={`${className && "300"}`}
       >
         <img
-          aria-label="github"
+          aria-label='github'
           src={className ? githubblue : github}
-          alt="Temitayo Github"
+          alt='Temitayo Github'
         />
       </NavLink>
       <NavLink
         data-aos={`${className && "fade-left"}`}
         data-aos-delay={`${className && "400"}`}
         to={{ pathname: "https://twitter.com/bamigboyeayomi5" }}
-        target="_blank"
+        target='_blank'
         className={`social-links ${className}`}
       >
         <img
-          aria-label="Twitter"
+          aria-label='Twitter'
           src={className ? twitterBlue : twitter}
-          alt="Temitayo Twitter"
+          alt='Temitayo Twitter'
         />
       </NavLink>
       <NavLink
         data-aos={`${className && "fade-left"}`}
         data-aos-delay={`${className && "500"}`}
         to={{
-          pathname:
-            "https://https://www.linkedin.com/in/ayomide-bamigboye-a477b4171/",
+          pathname: "https://www.linkedin.com/in/ayomide-bamigboye-a477b4171/",
         }}
-        target="_blank"
+        target='_blank'
         className={`social-links ${className}`}
       >
         <img
-          aria-label="Linkedin"
+          aria-label='Linkedin'
           src={className ? linkedBlue : linkedin}
-          alt="Temitayo Linkedin"
+          alt='Temitayo Linkedin'
         />
       </NavLink>
     </div>
